@@ -1,0 +1,12 @@
+D:\COURS EPSI\Environnement net\FacturationSolution\FacturationSolution\Shared\bin\Debug\net5.0\FacturationSolution.Shared.deps.json
+D:\COURS EPSI\Environnement net\FacturationSolution\FacturationSolution\Shared\bin\Debug\net5.0\FacturationSolution.Shared.dll
+D:\COURS EPSI\Environnement net\FacturationSolution\FacturationSolution\Shared\bin\Debug\net5.0\ref\FacturationSolution.Shared.dll
+D:\COURS EPSI\Environnement net\FacturationSolution\FacturationSolution\Shared\bin\Debug\net5.0\FacturationSolution.Shared.pdb
+D:\COURS EPSI\Environnement net\FacturationSolution\FacturationSolution\Shared\obj\Debug\net5.0\FacturationSolution.Shared.csprojAssemblyReference.cache
+D:\COURS EPSI\Environnement net\FacturationSolution\FacturationSolution\Shared\obj\Debug\net5.0\FacturationSolution.Shared.GeneratedMSBuildEditorConfig.editorconfig
+D:\COURS EPSI\Environnement net\FacturationSolution\FacturationSolution\Shared\obj\Debug\net5.0\FacturationSolution.Shared.AssemblyInfoInputs.cache
+D:\COURS EPSI\Environnement net\FacturationSolution\FacturationSolution\Shared\obj\Debug\net5.0\FacturationSolution.Shared.AssemblyInfo.cs
+D:\COURS EPSI\Environnement net\FacturationSolution\FacturationSolution\Shared\obj\Debug\net5.0\FacturationSolution.Shared.csproj.CoreCompileInputs.cache
+D:\COURS EPSI\Environnement net\FacturationSolution\FacturationSolution\Shared\obj\Debug\net5.0\FacturationSolution.Shared.dll
+D:\COURS EPSI\Environnement net\FacturationSolution\FacturationSolution\Shared\obj\Debug\net5.0\ref\FacturationSolution.Shared.dll
+D:\COURS EPSI\Environnement net\FacturationSolution\FacturationSolution\Shared\obj\Debug\net5.0\FacturationSolution.Shared.pdb

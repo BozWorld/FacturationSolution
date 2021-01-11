@@ -1,0 +1,49 @@
+﻿@page "/Factures"
+@inject HttpClient http
+@using FacturationSolution.Shared
+<h3>Factures</h3>
+
+<p>Retrouver ici toute les informations sur vos factures!</p>
+
+@if (listefactures == null)
+{
+    <p>Interrogation du serveur...</p>
+}
+
+else
+{
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>client</th>
+                <th>emission</th>
+                <th>reglementation</th>
+                <th>numero</th>
+                <th>montants_du</th>
+                <th>montants_regler</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var facture in listefactures)
+            {
+                <tr>
+                    <td>@facture.client</td>
+                    <td>@facture.emission</td>
+                    <td>@facture.reglementation</td>
+                    <td>@facture.numero</td>
+                    <td>@facture.montants_du</td>
+                    <td>@facture.montants_regler</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+@code {
+    private IEnumerable<FactureClient> listefactures = null;
+
+    protected override async Task OnInitializedAsync()
+    {
+        listefactures = await http.GetFromJsonAsync<IEnumerable<FactureClient>>("api/Factures");
+    }
+}
