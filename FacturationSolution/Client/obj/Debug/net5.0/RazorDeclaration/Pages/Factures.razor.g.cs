@@ -101,7 +101,6 @@ using FacturationSolution.Shared;
 #line 42 "D:\COURS EPSI\Environnement net\FacturationSolution\FacturationSolution\Client\Pages\Factures.razor"
        
     private IEnumerable<FactureClient> listefactures = null;
-
     protected override async Task OnInitializedAsync()
     {
         listefactures = await http.GetFromJsonAsync<IEnumerable<FactureClient>>("api/Factures");

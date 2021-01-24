@@ -26,11 +26,10 @@ namespace FacturationSolution.Server.Controllers
         {
            return _data.Factures;
         }
-
         [HttpGet("{client}")]
         public ActionResult<FactureClient> Get(String client)
         {
-            var facture = _data.Factures.Where(inv => inv.client == client).FirstOrDefault();
+            var facture = _data.Factures.Where(inv => inv.Client == client).FirstOrDefault();
             if(facture != null)
             {
                 return facture;
@@ -45,8 +44,8 @@ namespace FacturationSolution.Server.Controllers
         {
             if (ModelState.IsValid)
             {
-                Get().Append(newFacture);
-                return Created($"/Factures/{newFacture.numero}", newFacture);
+                _data.AddFacture(newFacture);
+                return Created($"/Factures/{newFacture.Numero}", newFacture);
             }
             else
             {

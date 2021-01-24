@@ -410,7 +410,6 @@ D:\COURS EPSI\Environnement net\FacturationSolution\FacturationSolution\Client\o
 D:\COURS EPSI\Environnement net\FacturationSolution\FacturationSolution\Client\obj\Debug\net5.0\FacturationSolution.Client.RazorComponent.input.cache
 D:\COURS EPSI\Environnement net\FacturationSolution\FacturationSolution\Client\obj\Debug\net5.0\RazorDeclaration\App.razor.g.cs
 D:\COURS EPSI\Environnement net\FacturationSolution\FacturationSolution\Client\obj\Debug\net5.0\RazorDeclaration\Pages\CA.razor.g.cs
-D:\COURS EPSI\Environnement net\FacturationSolution\FacturationSolution\Client\obj\Debug\net5.0\RazorDeclaration\Pages\Counter.razor.g.cs
 D:\COURS EPSI\Environnement net\FacturationSolution\FacturationSolution\Client\obj\Debug\net5.0\RazorDeclaration\Pages\Factures.razor.g.cs
 D:\COURS EPSI\Environnement net\FacturationSolution\FacturationSolution\Client\obj\Debug\net5.0\RazorDeclaration\Pages\Index.razor.g.cs
 D:\COURS EPSI\Environnement net\FacturationSolution\FacturationSolution\Client\obj\Debug\net5.0\RazorDeclaration\Shared\SurveyPrompt.razor.g.cs
@@ -424,7 +423,6 @@ D:\COURS EPSI\Environnement net\FacturationSolution\FacturationSolution\Client\o
 D:\COURS EPSI\Environnement net\FacturationSolution\FacturationSolution\Client\obj\Debug\net5.0\FacturationSolution.Client.RazorCoreGenerate.cache
 D:\COURS EPSI\Environnement net\FacturationSolution\FacturationSolution\Client\obj\Debug\net5.0\Razor\App.razor.g.cs
 D:\COURS EPSI\Environnement net\FacturationSolution\FacturationSolution\Client\obj\Debug\net5.0\Razor\Pages\CA.razor.g.cs
-D:\COURS EPSI\Environnement net\FacturationSolution\FacturationSolution\Client\obj\Debug\net5.0\Razor\Pages\Counter.razor.g.cs
 D:\COURS EPSI\Environnement net\FacturationSolution\FacturationSolution\Client\obj\Debug\net5.0\Razor\Pages\Factures.razor.g.cs
 D:\COURS EPSI\Environnement net\FacturationSolution\FacturationSolution\Client\obj\Debug\net5.0\Razor\Pages\Index.razor.g.cs
 D:\COURS EPSI\Environnement net\FacturationSolution\FacturationSolution\Client\obj\Debug\net5.0\Razor\Shared\SurveyPrompt.razor.g.cs

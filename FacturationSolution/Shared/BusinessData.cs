@@ -7,8 +7,9 @@ namespace FacturationSolution.Shared
     public class BusinessData : IBusinessData
     {
         public IEnumerable<FactureClient> Factures { get; }
-        public int CAdu { get; }
-        public int CAsupposé { get; }
+        public int CaDu { get; }
+        public int CaSuppose { get; }
+
         public BusinessData()
         {
             Factures = new FactureClient[]
@@ -19,10 +20,20 @@ namespace FacturationSolution.Shared
             };
             foreach (FactureClient facture in Factures)
             {
-                CAdu += facture.montants_du;
-                CAsupposé += facture.montants_regler;
+                CaDu += facture.MontantDu;
+                CaSuppose += facture.MontantsRegler;
             }
      
+        }
+
+        public FactureClient AddFacture(FactureClient facture)
+        {
+            throw new NotImplementedException();
+        }
+
+        void IBusinessData.AddFacture(FactureClient facture)
+        {
+            throw new NotImplementedException();
         }
     }
 }

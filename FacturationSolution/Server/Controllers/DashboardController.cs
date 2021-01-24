@@ -24,19 +24,6 @@ namespace FacturationSolution.Server.Controllers
             _data = data;
         }
         [HttpGet]
-        public String Get()
-        {
-            StringBuilder sb = new StringBuilder();
-            StringWriter sw = new StringWriter(sb);
-            JsonWriter jw = new JsonTextWriter(sw);
-            jw.Formatting = Formatting.Indented;
-            jw.WriteStartObject();
-            jw.WritePropertyName("CADu");
-            jw.WriteValue(_data.CAdu);
-            jw.WritePropertyName("CAreel");
-            jw.WriteValue(_data.CAsupposé);
-            jw.WriteEnd();
-            return sb.ToString();
-        }
+        public DashboardDTO Get() => new DashboardDTO { CaDu = _data.CaDu, CaSuppose = _data.CaSuppose };
     }
 }

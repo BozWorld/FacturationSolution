@@ -28,12 +28,12 @@ else
             @foreach (var facture in listefactures)
             {
                 <tr>
-                    <td>@facture.client</td>
-                    <td>@facture.emission</td>
-                    <td>@facture.reglementation</td>
-                    <td>@facture.numero</td>
-                    <td>@facture.montants_du</td>
-                    <td>@facture.montants_regler</td>
+                    <td>@facture.Client</td>
+                    <td>@facture.Emission</td>
+                    <td>@facture.Reglementation</td>
+                    <td>@facture.Numero</td>
+                    <td>@facture.MontantDu</td>
+                    <td>@facture.MontantsRegler</td>
                 </tr>
             }
         </tbody>
@@ -41,7 +41,6 @@ else
 }
 @code {
     private IEnumerable<FactureClient> listefactures = null;
-
     protected override async Task OnInitializedAsync()
     {
         listefactures = await http.GetFromJsonAsync<IEnumerable<FactureClient>>("api/Factures");

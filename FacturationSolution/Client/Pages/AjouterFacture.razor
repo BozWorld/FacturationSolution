@@ -1,24 +1,30 @@
 ﻿@page "/AjouterFacture"
 @inject HttpClient http
 <h3>AjouterFacture</h3>
-<EditForm Model="@newFacture" OnValidSubmit="@OnInitializedAsync">
-    <InputText id="client" @bind-Value="newFacture.client" />
-    <InputDate id="emission" @bind-Value="newFacture.emission" />
-    <InputDate id="reglementation" @bind-Value="newFacture.reglementation" />
-    <InputDate id="emission" @bind-Value="newFacture.emission" />
-    <InputDate id="numero" @bind-Value="newFacture.numero" />
-    <InputNumber id="montant_du" @bind-Value="newFacture.montants_du" />
-    <InputDate id="montant_regler" @bind-Value="newFacture.montants_regler" />
+<EditForm Model="@newFacture" OnValidSubmit="@CreeFacture">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+    <p>Nom du client : </p>
+    <InputText id="client" @bind-Value="newFacture.Client" />
+    <p> Date d'emission : </p>
+    <InputDate id="emission" @bind-Value="newFacture.Emission" />
+    <p>Date de reglement : </p>
+    <InputDate id="reglementation" @bind-Value="newFacture.Reglementation" />
+    <p>Numero du client : </p>
+    <InputDate id="numero" @bind-Value="newFacture.Numero" />
+    <p>Montant Du : </p>
+    <InputNumber id="montant_du" @bind-Value="newFacture.MontantDu" />
+    <p>Montant regler : </p>
+    <InputDate id="montant_regler" @bind-Value="newFacture.MontantsRegler" />
     <button type="submit">Submit</button>
 </EditForm>
 
 @code {
-    private String nom;
-    private FactureClient newFacture;
-
-    protected override async Task OnInitializedAsync()
+    private FactureClient newFacture = new FactureClient();
+    
+    protected async void CreeFacture()
     {
-        await http.PostAsJsonAsync("api/Factures/", newFacture);
+         await http.PostAsJsonAsync("api/Factures/", newFacture);
     }
 
 }

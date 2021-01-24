@@ -4,15 +4,27 @@ using Newtonsoft.Json;
 using System;
 using System.IO;
 @inject HttpClient http
+
 <h3>Chiffre d'affaire</h3>
 
 <p> Voici une aperçu des chiffres d'affaires réels et attendus </p>
+@if (CaJson == null)
+{
+    <p>Interrogation du serveur...</p>
+}
+else
+{
+    <p>  Chiffre d'affaire réel : @CaJson.CaDu</p>
+    <p>  Chiffre d'affaire supposé : @CaJson.CaSuppose </p>
+}
 
-<p>  Chiffre d'affaire réel : @CAJson.CADu </p>
-<p>  Chiffre d'affaire supposé :  </p>
+
 @code {
-    private string CAJson;
-    protected override async Task OnInitializedAsync();
-    
+    private DashboardDTO CaJson = null;
+    protected override async Task OnInitializedAsync()
+    {
+        CaJson = await http.GetFromJsonAsync<DashboardDTO>("api/Dashboard");
+    }
+
 
 }

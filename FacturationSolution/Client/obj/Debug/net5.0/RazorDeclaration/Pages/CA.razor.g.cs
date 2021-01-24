@@ -98,11 +98,14 @@ using FacturationSolution.Shared;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 13 "D:\COURS EPSI\Environnement net\FacturationSolution\FacturationSolution\Client\Pages\CA.razor"
+#line 22 "D:\COURS EPSI\Environnement net\FacturationSolution\FacturationSolution\Client\Pages\CA.razor"
        
-    private string CAJson;
-    protected override async Task OnInitializedAsync();
-    
+    private DashboardDTO CaJson = null;
+    protected override async Task OnInitializedAsync()
+    {
+        CaJson = await http.GetFromJsonAsync<DashboardDTO>("api/Dashboard");
+    }
+
 
 
 #line default

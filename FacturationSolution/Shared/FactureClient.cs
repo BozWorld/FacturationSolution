@@ -11,26 +11,30 @@ namespace FacturationSolution.Shared
     {
         [Required]
         [StringLength(10, ErrorMessage = "Name is too long.")]
-        public string client { get; set; }
+        public string Client { get; set; }
         [Required]
-        public DateTime emission { get; set; }
+        public DateTime Emission { get; set; }
         [Required]
-        public DateTime reglementation { get; set; }
+        public DateTime Reglementation { get; set; }
         [Required]
-        public int numero { get; set; }
+        [Range(100, 400,
+        ErrorMessage = "Value for {0} must be between {1} and {2}.")]
+        public int? Numero { get; set; }
         [Required]
-        public int montants_du { get; set; }
+        public int MontantDu { get; set; }
         [Required]
-        public int montants_regler { get; set; }
+        public int MontantsRegler { get; set; }
+
+        public FactureClient() { }
 
         public FactureClient(string client, DateTime emission, DateTime reglementation, int numero, int montants_du, int montantsRegler)
         {
-            this.client = client;
-            this.emission = emission;
-            this.reglementation = reglementation;
-            this.numero = numero;
-            this.montants_du = montants_du;
-            this.montants_regler = montantsRegler;
+            this.Client = client;
+            this.Emission = emission;
+            this.Reglementation = reglementation;
+            this.Numero = numero;
+            this.MontantDu = montants_du;
+            this.MontantsRegler = montantsRegler;
         }
     }
 }

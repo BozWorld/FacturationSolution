@@ -8,8 +8,9 @@ namespace FacturationSolution.Shared
     public interface IBusinessData
     {
         IEnumerable<FactureClient> Factures { get; }
-        public int CAdu { get; }
-        int CAsupposé { get; }
+        public void AddFacture(FactureClient facture);
+        public int CaDu { get; }
+        public int CaSuppose { get; }
 
     }
 }

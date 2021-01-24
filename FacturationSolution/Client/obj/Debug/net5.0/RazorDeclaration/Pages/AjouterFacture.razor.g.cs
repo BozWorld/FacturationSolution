@@ -98,14 +98,13 @@ using FacturationSolution.Shared;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 15 "D:\COURS EPSI\Environnement net\FacturationSolution\FacturationSolution\Client\Pages\AjouterFacture.razor"
+#line 22 "D:\COURS EPSI\Environnement net\FacturationSolution\FacturationSolution\Client\Pages\AjouterFacture.razor"
        
-    private String nom;
-    private FactureClient newFacture;
-
-    protected override async Task OnInitializedAsync()
+    private FactureClient newFacture = new FactureClient();
+    
+    protected async void CreeFacture()
     {
-        await http.PostAsJsonAsync("api/Factures/", newFacture);
+         await http.PostAsJsonAsync("api/Factures/", newFacture);
     }
 
 
